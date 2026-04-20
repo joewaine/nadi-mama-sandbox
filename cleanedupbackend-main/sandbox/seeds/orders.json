@@ -1,0 +1,343 @@
+[
+  {
+    "email": "demo@example.com",
+    "payInfo": {
+      "uniqueTransId": "sandbox_trans_001",
+      "data": {
+        "uniqueTransId": "sandbox_trans_001",
+        "resultMessage": "Approved",
+        "maskedAccount": "XXXXXXXXXXXX4242",
+        "amount": "38.50"
+      }
+    },
+    "orderInfo": {
+      "timeStamp": 1650000000000,
+      "tipSelected": 18,
+      "sms": false,
+      "restaurant": "Mamnoon",
+      "billing": {
+        "billing_name": "Demo User",
+        "billing_address": "1745 12th Avenue South",
+        "billing_postal_code": "98144"
+      },
+      "id": "sandbox_order_001",
+      "preorder": false,
+      "scheduled_time": null,
+      "time_placed": "2024-01-15T19:30:00.000Z",
+      "confirmation_code": "mamnoon-demo001",
+      "charges": {
+        "total": 3850,
+        "preTotal": 3200,
+        "fees": 0,
+        "taxes": 320,
+        "tip": {
+          "amountOptions": [0, 18, 22, 25, 0],
+          "amount": 576,
+          "payment_type": "Generic Online Ordering Integrated"
+        },
+        "items": [
+          {
+            "name": "Lamb Kebab",
+            "price": 2800,
+            "quantity": 1,
+            "cartId": "cart_001",
+            "returned": false
+          },
+          {
+            "name": "Hummus",
+            "price": 1200,
+            "quantity": 1,
+            "cartId": "cart_002",
+            "returned": false
+          }
+        ]
+      },
+      "fulfillment_info": {
+        "type": "pickup",
+        "estimated_fulfillment_time": "2024-01-15T20:00:00.000Z",
+        "customer": {
+          "email": "demo@example.com",
+          "phone": "2065551234",
+          "first_name": "Demo"
+        },
+        "instructions": "",
+        "no_tableware": false,
+        "delivery_info": {
+          "is_managed_delivery": false,
+          "address": { "city": "", "state": "", "zip_code": "", "address_line1": "", "address_line2": "" }
+        }
+      },
+      "payments": { "payments": [{ "payment_type": "Generic Online Ordering Integrated", "amount": 3850 }] }
+    },
+    "void": false,
+    "uniqueTransId": "sandbox_trans_001",
+    "upserveId": "sandbox_order_001",
+    "status": "Closed",
+    "orderPosted": true,
+    "orderAccepted": true,
+    "shippingOrder": false,
+    "shipped": false,
+    "shippingInfo": { "order": "empty" },
+    "acceptanceEmailSent": true,
+    "readyEmailSent": true
+  },
+  {
+    "email": "demo@example.com",
+    "payInfo": {
+      "uniqueTransId": "sandbox_trans_002",
+      "data": {
+        "uniqueTransId": "sandbox_trans_002",
+        "resultMessage": "Approved",
+        "maskedAccount": "XXXXXXXXXXXX4242",
+        "amount": "26.40"
+      }
+    },
+    "orderInfo": {
+      "timeStamp": 1650100000000,
+      "tipSelected": 22,
+      "sms": true,
+      "restaurant": "Mamnoon Street",
+      "billing": {
+        "billing_name": "Demo User",
+        "billing_address": "1745 12th Avenue South",
+        "billing_postal_code": "98144"
+      },
+      "id": "sandbox_order_002",
+      "preorder": false,
+      "scheduled_time": null,
+      "time_placed": "2024-01-20T12:15:00.000Z",
+      "confirmation_code": "mamnoon-demo002",
+      "charges": {
+        "total": 2640,
+        "preTotal": 2200,
+        "fees": 0,
+        "taxes": 220,
+        "tip": {
+          "amountOptions": [0, 18, 22, 25, 0],
+          "amount": 484,
+          "payment_type": "Generic Online Ordering Integrated"
+        },
+        "items": [
+          {
+            "name": "Chicken Shawarma Wrap",
+            "price": 1400,
+            "quantity": 1,
+            "cartId": "cart_003",
+            "returned": false
+          },
+          {
+            "name": "Fries with Za'atar",
+            "price": 800,
+            "quantity": 1,
+            "cartId": "cart_004",
+            "returned": false
+          }
+        ]
+      },
+      "fulfillment_info": {
+        "type": "pickup",
+        "estimated_fulfillment_time": "2024-01-20T12:45:00.000Z",
+        "customer": {
+          "email": "demo@example.com",
+          "phone": "2065551234",
+          "first_name": "Demo"
+        },
+        "instructions": "Extra garlic sauce please",
+        "no_tableware": true,
+        "delivery_info": {
+          "is_managed_delivery": false,
+          "address": { "city": "", "state": "", "zip_code": "", "address_line1": "", "address_line2": "" }
+        }
+      },
+      "payments": { "payments": [{ "payment_type": "Generic Online Ordering Integrated", "amount": 2640 }] }
+    },
+    "void": false,
+    "uniqueTransId": "sandbox_trans_002",
+    "upserveId": "sandbox_order_002",
+    "status": "Closed",
+    "orderPosted": true,
+    "orderAccepted": true,
+    "shippingOrder": false,
+    "shipped": false,
+    "shippingInfo": { "order": "empty" },
+    "acceptanceEmailSent": true,
+    "readyEmailSent": true
+  },
+  {
+    "email": "sarah@example.com",
+    "payInfo": {
+      "uniqueTransId": "sandbox_trans_003",
+      "data": {
+        "uniqueTransId": "sandbox_trans_003",
+        "resultMessage": "Approved",
+        "maskedAccount": "XXXXXXXXXXXX1234",
+        "amount": "96.00"
+      }
+    },
+    "orderInfo": {
+      "timeStamp": 1650200000000,
+      "tipSelected": 25,
+      "sms": false,
+      "restaurant": "Mbar",
+      "billing": {
+        "billing_name": "Sarah Johnson",
+        "billing_address": "400 Broad St",
+        "billing_postal_code": "98109"
+      },
+      "id": "sandbox_order_003",
+      "preorder": true,
+      "scheduled_time": "2024-02-14T19:00:00.000Z",
+      "time_placed": "2024-02-12T10:00:00.000Z",
+      "confirmation_code": "mamnoon-demo003",
+      "charges": {
+        "total": 9600,
+        "preTotal": 7600,
+        "fees": 0,
+        "taxes": 760,
+        "tip": {
+          "amountOptions": [0, 18, 22, 25, 0],
+          "amount": 1900,
+          "payment_type": "Generic Online Ordering Integrated"
+        },
+        "items": [
+          {
+            "name": "Wagyu Kebab",
+            "price": 4200,
+            "quantity": 1,
+            "cartId": "cart_005",
+            "returned": false
+          },
+          {
+            "name": "Whole Roasted Branzino",
+            "price": 3800,
+            "quantity": 1,
+            "cartId": "cart_006",
+            "returned": false
+          }
+        ]
+      },
+      "fulfillment_info": {
+        "type": "pickup",
+        "estimated_fulfillment_time": "2024-02-14T19:00:00.000Z",
+        "customer": {
+          "email": "sarah@example.com",
+          "phone": "2065555678",
+          "first_name": "Sarah"
+        },
+        "instructions": "Anniversary dinner",
+        "no_tableware": false,
+        "delivery_info": {
+          "is_managed_delivery": false,
+          "address": { "city": "", "state": "", "zip_code": "", "address_line1": "", "address_line2": "" }
+        }
+      },
+      "payments": { "payments": [{ "payment_type": "Generic Online Ordering Integrated", "amount": 9600 }] }
+    },
+    "void": false,
+    "uniqueTransId": "sandbox_trans_003",
+    "upserveId": "sandbox_order_003",
+    "status": "Closed",
+    "orderPosted": true,
+    "orderAccepted": true,
+    "shippingOrder": false,
+    "shipped": false,
+    "shippingInfo": { "order": "empty" },
+    "acceptanceEmailSent": true,
+    "readyEmailSent": true
+  },
+  {
+    "email": "demo@example.com",
+    "payInfo": {
+      "uniqueTransId": "sandbox_trans_004",
+      "data": {
+        "uniqueTransId": "sandbox_trans_004",
+        "resultMessage": "Approved",
+        "maskedAccount": "XXXXXXXXXXXX4242",
+        "amount": "42.00"
+      }
+    },
+    "orderInfo": {
+      "timeStamp": 1650300000000,
+      "tipSelected": 0,
+      "sms": false,
+      "restaurant": "Mamnoon",
+      "billing": {
+        "billing_name": "Demo User",
+        "billing_address": "1745 12th Avenue South",
+        "billing_postal_code": "98144"
+      },
+      "id": "sandbox_order_004_retail",
+      "preorder": false,
+      "scheduled_time": null,
+      "time_placed": "2024-02-01T15:00:00.000Z",
+      "confirmation_code": "mamnoon-demo004",
+      "charges": {
+        "total": 4200,
+        "preTotal": 3600,
+        "shipping": "12.50",
+        "fees": 0,
+        "taxes": 288,
+        "tip": {
+          "amountOptions": [],
+          "amount": 0,
+          "payment_type": "Generic Online Ordering Integrated"
+        },
+        "items": [
+          {
+            "name": "Za'atar Spice Blend",
+            "price": 1200,
+            "quantity": 2,
+            "cartId": "cart_007",
+            "returned": false
+          },
+          {
+            "name": "Mamnoon Olive Oil",
+            "price": 2400,
+            "quantity": 1,
+            "cartId": "cart_008",
+            "returned": false
+          }
+        ]
+      },
+      "fulfillment_info": {
+        "type": "delivery",
+        "estimated_fulfillment_time": null,
+        "customer": {
+          "email": "demo@example.com",
+          "phone": "2065551234",
+          "first_name": "Demo"
+        },
+        "instructions": "",
+        "no_tableware": false,
+        "weight": { "lbs": 2, "oz": 8 },
+        "delivery_info": {
+          "is_managed_delivery": false,
+          "address": {
+            "city": "Seattle",
+            "state": "WA",
+            "zip_code": "98144",
+            "address_line1": "1745 12th Avenue South",
+            "address_line2": "#2"
+          }
+        }
+      },
+      "payments": { "payments": [{ "payment_type": "Generic Online Ordering Integrated", "amount": 4200 }] }
+    },
+    "void": false,
+    "uniqueTransId": "sandbox_trans_004",
+    "upserveId": "sandbox_order_004_retail",
+    "status": "Closed",
+    "orderPosted": true,
+    "orderAccepted": true,
+    "shippingOrder": true,
+    "shipped": true,
+    "shippingInfo": {
+      "tracking_number": "SANDBOX1234567",
+      "tracking_url_provider": "https://tools.usps.com/go/TrackConfirmAction?tLabels=SANDBOX1234567",
+      "label_url": "https://placekitten.com/400/600",
+      "status": "SUCCESS"
+    },
+    "acceptanceEmailSent": true,
+    "readyEmailSent": true
+  }
+]

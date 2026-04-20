@@ -1,0 +1,52 @@
+[
+  {
+    "email": "sarah@example.com",
+    "date": "2024-02-14",
+    "emailDate": "2024-02-14",
+    "upserveId": "res_001",
+    "sevenRoomsId": "sr_001",
+    "venue": "Mbar",
+    "reservationsList": {
+      "sevenrooms": "johnson",
+      "roomsinfo": {
+        "phone": "+12065555678",
+        "last": "Johnson",
+        "allInfo": {
+          "first_name": "Sarah",
+          "last_name": "Johnson",
+          "email": "sarah@example.com",
+          "date": "2024-02-14",
+          "party_size": 2,
+          "time": "7:00 PM",
+          "status": "CONFIRMED"
+        }
+      }
+    },
+    "upserveInfo": {}
+  },
+  {
+    "email": "demo@example.com",
+    "date": "2024-03-01",
+    "emailDate": "2024-03-01",
+    "upserveId": "res_002",
+    "sevenRoomsId": "sr_002",
+    "venue": "Mamnoon",
+    "reservationsList": {
+      "sevenrooms": "user",
+      "roomsinfo": {
+        "phone": "+12065551234",
+        "last": "User",
+        "allInfo": {
+          "first_name": "Demo",
+          "last_name": "User",
+          "email": "demo@example.com",
+          "date": "2024-03-01",
+          "party_size": 4,
+          "time": "6:30 PM",
+          "status": "CONFIRMED"
+        }
+      }
+    },
+    "upserveInfo": {}
+  }
+]

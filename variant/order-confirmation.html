@@ -1,0 +1,197 @@
+<html lang="en" class="h-full antialiased" vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">Order Confirmed — Nadi Mama</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" vid="6">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="7">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet" vid="8">
+    <script vid="9">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        stone: {
+                            850: '#23201E',
+                            900: '#1A1715',
+                            950: '#12100E',
+                        },
+                        terracotta: {
+                            400: '#E27B58',
+                            500: '#D35C3A',
+                            600: '#B84A2A',
+                        },
+                        sand: {
+                            100: '#FDFBF9',
+                            200: '#F4EFEA',
+                            300: '#E6DCD3',
+                            400: '#A89F98',
+                        }
+                    },
+                    animation: {
+                        'checkmark': 'checkmark 0.8s cubic-bezier(0.65, 0, 0.45, 1) forwards',
+                        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        checkmark: {
+                            '0%': { 'stroke-dashoffset': '100' },
+                            '100%': { 'stroke-dashoffset': '0' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style vid="10">
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #2D2622; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D35C3A; }
+        
+        .confirmation-bg {
+            background: radial-gradient(circle at center, rgba(211, 92, 58, 0.05) 0%, rgba(18, 16, 14, 0) 70%);
+        }
+
+        .checkmark-circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            stroke: #D35C3A;
+            fill: none;
+            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+        }
+
+        .checkmark-check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+        }
+
+        @keyframes stroke {
+            100% { stroke-dashoffset: 0; }
+        }
+    </style>
+</head>
+<body class="h-full bg-stone-950 text-sand-200 overflow-hidden flex flex-col" vid="11">
+
+    
+    <header class="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex justify-between items-center bg-stone-950/80 backdrop-blur-md border-b border-stone-850/50" vid="12">
+        <a href="#" class="flex items-center gap-3 group" vid="13">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-sand-200" vid="14">
+                <path d="M20 0L23.5 12L32 3L27 15L40 20L27 25L32 37L23.5 28L20 40L16.5 28L8 37L13 25L0 20L13 15L8 3L16.5 12L20 0Z" fill="currentColor" vid="15"></path>
+                <path d="M20 9L21.5 15L26 10.5L23.5 16.5L30 20L23.5 23.5L26 29.5L21.5 25L20 31L18.5 25L14 29.5L16.5 23.5L10 20L16.5 16.5L14 10.5L18.5 15L20 9Z" fill="#12100E" vid="16"></path>
+            </svg>
+            <span class="text-lg tracking-[0.2em] font-medium uppercase mt-1 text-sand-100" vid="17">Nadi Mama</span>
+        </a>
+        <div class="flex items-center gap-6" vid="18">
+            <button class="text-sand-400 hover:text-sand-100 transition-colors text-xs uppercase tracking-widest font-medium" vid="19">Support</button>
+            <button class="bg-stone-850 hover:bg-stone-800 text-sand-100 px-6 py-2.5 rounded text-xs font-medium tracking-[0.1em] uppercase transition-colors" vid="20">
+                My Account
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-1 overflow-y-auto pt-32 pb-24 px-8 confirmation-bg" vid="21">
+        <div class="max-w-2xl mx-auto flex flex-col items-center" vid="22">
+            
+            
+            <div class="mb-8" vid="23">
+                <svg class="w-24 h-24" viewBox="0 0 52 52" vid="24">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" vid="25"></circle>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" stroke="#D35C3A" stroke-width="3" vid="26"></path>
+                </svg>
+            </div>
+
+            <div class="text-center mb-12 animate-fade-in-up" vid="27">
+                <h1 class="text-4xl font-light text-sand-100 mb-4" vid="28">Shukran! Your order is placed.</h1>
+                <p class="text-sand-400 text-lg font-light" vid="29">We’ve sent a confirmation email to <span class="text-sand-200" vid="30">nour@example.com</span></p>
+            </div>
+
+            
+            <div class="w-full bg-[#1A1715] border border-stone-850 rounded-lg p-8 mb-8 grid grid-cols-2 gap-8 animate-fade-in-up" style="animation-delay: 0.2s" vid="31">
+                <div vid="32">
+                    <p class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-2" vid="33">Estimated Pickup</p>
+                    <p class="text-3xl font-light text-terracotta-400" vid="34">6:45 PM</p>
+                    <p class="text-xs text-sand-400 mt-1" vid="35">Today, Oct 24</p>
+                </div>
+                <div class="border-l border-stone-850 pl-8" vid="36">
+                    <p class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-2" vid="37">Order Number</p>
+                    <p class="text-3xl font-light text-sand-100" vid="38">#NM-8294</p>
+                    <p class="text-xs text-sand-400 mt-1" vid="39">Mamnoon • Seattle, WA</p>
+                </div>
+            </div>
+
+            
+            <div class="w-full bg-[#0A0908] border border-stone-850 rounded-lg overflow-hidden animate-fade-in-up" style="animation-delay: 0.4s" vid="40">
+                <div class="px-8 py-6 border-b border-stone-850/50 flex justify-between items-center" vid="41">
+                    <h2 class="text-sm font-medium tracking-[0.15em] uppercase text-sand-100" vid="42">Order Summary</h2>
+                    <span class="text-xs text-sand-400" vid="43">2 Items</span>
+                </div>
+                
+                <div class="p-8 space-y-6" vid="44">
+                    <div class="flex justify-between items-start" vid="45">
+                        <div vid="46">
+                            <p class="text-sm font-medium text-sand-100" vid="47">1 × Hummus</p>
+                            <p class="text-xs text-stone-500 mt-1" vid="48">Extra fresh pita included</p>
+                        </div>
+                        <span class="text-sm text-sand-200" vid="49">$12.00</span>
+                    </div>
+                    
+                    <div class="flex justify-between items-start" vid="50">
+                        <div vid="51">
+                            <p class="text-sm font-medium text-sand-100" vid="52">1 × Za'atar Spice Blend</p>
+                            <p class="text-xs text-stone-500 mt-1" vid="53">250g Retail Pack</p>
+                        </div>
+                        <span class="text-sm text-sand-200" vid="54">$12.00</span>
+                    </div>
+                    
+                    <div class="pt-6 border-t border-stone-850/50 space-y-3" vid="55">
+                        <div class="flex justify-between text-xs text-sand-400" vid="56">
+                            <span vid="57">Subtotal</span>
+                            <span vid="58">$24.00</span>
+                        </div>
+                        <div class="flex justify-between text-xs text-sand-400" vid="59">
+                            <span vid="60">Tax</span>
+                            <span vid="61">$2.46</span>
+                        </div>
+                        <div class="flex justify-between text-sm font-medium text-sand-100 pt-2" vid="62">
+                            <span vid="63">Total</span>
+                            <span vid="64">$26.46</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-8 py-6 bg-stone-900/30 border-t border-stone-850 flex flex-col gap-4" vid="65">
+                    <div class="flex items-center gap-3" vid="66">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-terracotta-500" vid="67"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" vid="68"></path><circle cx="12" cy="10" r="3" vid="69"></circle></svg>
+                        <p class="text-xs text-sand-300 font-light" vid="70">Pickup at <span class="text-sand-100 font-medium" vid="71">1508 Melrose Ave, Seattle, WA 98122</span></p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="mt-12 flex gap-4 animate-fade-in-up" style="animation-delay: 0.6s" vid="72">
+                <button class="px-8 py-3 border border-stone-800 text-sand-400 hover:text-sand-100 hover:border-stone-600 rounded text-xs font-medium tracking-[0.1em] uppercase transition-all" vid="73">
+                    Get Directions
+                </button>
+                <button class="px-8 py-3 bg-terracotta-500 hover:bg-terracotta-400 text-white rounded text-xs font-medium tracking-[0.1em] uppercase transition-all" vid="74">
+                    Track Progress
+                </button>
+            </div>
+
+            <button class="mt-8 text-stone-500 hover:text-sand-400 transition-colors text-[0.65rem] uppercase tracking-widest font-medium" vid="75">
+                Download PDF Receipt
+            </button>
+        </div>
+    </main>
+
+</body></html>

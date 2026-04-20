@@ -1,0 +1,24 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# Nuxt build output
+.nuxt/
+.output/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Excluded from this repo
+nadiNuxt-legacy/

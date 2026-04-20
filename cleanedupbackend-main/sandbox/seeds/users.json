@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Demo User",
+    "email": "demo@example.com",
+    "password": "password123",
+    "deliveryAddress": {
+      "address_line1": "1745 12th Avenue South",
+      "address_line2": "#2",
+      "city": "Seattle",
+      "state": "WA",
+      "zip_code": "98144"
+    },
+    "billingAddress": {
+      "address_line1": "1745 12th Avenue South",
+      "address_line2": "#2",
+      "city": "Seattle",
+      "state": "WA",
+      "zip_code": "98144"
+    },
+    "testimonials": [
+      {
+        "_id": "T1650000000001",
+        "title": "Amazing Food",
+        "body": "The lamb kebab was perfectly seasoned and the hummus is the best I've had outside of Beirut. Will definitely be ordering again!",
+        "name": "Demo User"
+      }
+    ],
+    "giftcard": "",
+    "giftcards": [
+      {
+        "_id": "G1650000000001",
+        "number": "4111111111111111",
+        "preferred": true
+      },
+      {
+        "_id": "G1650000000002",
+        "number": "4222222222222222",
+        "preferred": false
+      }
+    ]
+  },
+  {
+    "name": "Sarah Johnson",
+    "email": "sarah@example.com",
+    "password": "password123",
+    "deliveryAddress": {
+      "address_line1": "400 Broad St",
+      "address_line2": "",
+      "city": "Seattle",
+      "state": "WA",
+      "zip_code": "98109"
+    },
+    "billingAddress": {
+      "address_line1": "400 Broad St",
+      "address_line2": "",
+      "city": "Seattle",
+      "state": "WA",
+      "zip_code": "98109"
+    },
+    "testimonials": [
+      {
+        "_id": "T1650000000002",
+        "title": "Perfect Anniversary Dinner",
+        "body": "We celebrated our anniversary at Mbar and it was unforgettable. The wagyu kebab and the Damascus Rose cocktail were highlights.",
+        "name": "Sarah"
+      }
+    ],
+    "giftcard": "",
+    "giftcards": []
+  },
+  {
+    "name": "Michael Chen",
+    "email": "michael@example.com",
+    "password": "password123",
+    "deliveryAddress": {
+      "address_line1": "2000 1st Ave",
+      "address_line2": "Apt 4B",
+      "city": "Seattle",
+      "state": "WA",
+      "zip_code": "98121"
+    },
+    "billingAddress": {
+      "address_line1": "2000 1st Ave",
+      "address_line2": "Apt 4B",
+      "city": "Seattle",
+      "state": "WA",
+      "zip_code": "98121"
+    },
+    "testimonials": [],
+    "giftcard": "",
+    "giftcards": [
+      {
+        "_id": "G1650000000003",
+        "number": "4333333333333333",
+        "preferred": true
+      }
+    ]
+  }
+]

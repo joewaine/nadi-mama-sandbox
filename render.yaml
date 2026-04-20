@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: nadi-backend
+    runtime: node
+    rootDir: cleanedupbackend-main
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: SANDBOX_MODE
+        value: "true"
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: NODE_VERSION
+        value: "20"
+
+  - type: web
+    name: nadi-frontend
+    runtime: node
+    rootDir: nadiNuxt
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: API_URL
+        sync: false
+      - key: NODE_VERSION
+        value: "20"

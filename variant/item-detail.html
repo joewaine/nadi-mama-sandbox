@@ -1,0 +1,230 @@
+<html lang="en" class="h-full antialiased" vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">Hummus Detail — Mamnoon</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" vid="6">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="7">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet" vid="8">
+    <script vid="9">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        stone: {
+                            850: '#23201E',
+                            900: '#1A1715',
+                            950: '#12100E',
+                        },
+                        terracotta: {
+                            400: '#E27B58',
+                            500: '#D35C3A',
+                            600: '#B84A2A',
+                        },
+                        sand: {
+                            100: '#FDFBF9',
+                            200: '#F4EFEA',
+                            300: '#E6DCD3',
+                            400: '#A89F98',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style vid="10">
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #2D2622; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D35C3A; }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(18, 16, 14, 0) 0%, rgba(18, 16, 14, 0.4) 50%, rgba(18, 16, 14, 1) 100%);
+        }
+        .header-gradient {
+            background: linear-gradient(to bottom, rgba(18, 16, 14, 0.95) 0%, rgba(18, 16, 14, 0.8) 50%, rgba(18, 16, 14, 0) 100%);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="h-full bg-stone-950 text-sand-200 overflow-hidden flex" vid="11">
+
+    
+    <main class="flex-1 h-full overflow-y-auto relative scroll-smooth flex flex-col" vid="12">
+        
+        
+        <header class="fixed top-0 left-0 right-[380px] z-50 header-gradient px-8 py-6 flex justify-between items-center" vid="13">
+            <a href="#" class="flex items-center gap-3 group" vid="14">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sand-400 group-hover:text-sand-100 transition-colors" vid="15"><line x1="19" y1="12" x2="5" y2="12" vid="16"></line><polyline points="12 19 5 12 12 5" vid="17"></polyline></svg>
+                <span class="text-xs tracking-[0.2em] font-medium uppercase text-sand-400 group-hover:text-sand-100 transition-colors" vid="18">Back to Menu</span>
+            </a>
+            <div class="flex items-center gap-6" vid="19">
+                <button class="bg-terracotta-500 hover:bg-terracotta-400 text-white px-6 py-2.5 rounded text-xs font-medium tracking-[0.1em] uppercase transition-colors" vid="20">Sign In</button>
+            </div>
+        </header>
+
+        
+        <section class="relative h-[55vh] min-h-[400px] flex-shrink-0 w-full" vid="21">
+            <div class="absolute inset-0 w-full h-full z-0" vid="22">
+                <img src="https://images.unsplash.com/photo-1577906030551-f74baaa32230?q=80&amp;w=2940&amp;auto=format&amp;fit=crop" alt="Mamnoon Hummus" class="w-full h-full object-cover object-center" vid="23">
+                <div class="absolute inset-0 hero-gradient" vid="24"></div>
+            </div>
+        </section>
+
+        
+        <section class="relative z-10 px-12 -mt-32 pb-24 max-w-5xl" vid="25">
+            <div class="flex flex-col gap-8" vid="26">
+                
+                <div vid="27">
+                    <div class="flex items-center gap-3 mb-4" vid="28">
+                        <span class="text-[0.7rem] uppercase tracking-widest px-2 py-0.5 bg-stone-900 border border-stone-800 text-sand-400 rounded-sm" vid="29">Vegan</span>
+                        <span class="text-[0.7rem] uppercase tracking-widest px-2 py-0.5 bg-stone-900 border border-stone-800 text-sand-400 rounded-sm" vid="30">Gluten-Free</span>
+                        <span class="text-[0.7rem] uppercase tracking-widest px-2 py-0.5 bg-terracotta-500/10 border border-terracotta-500/30 text-terracotta-400 rounded-sm" vid="31">Signature</span>
+                    </div>
+                    <div class="flex justify-between items-end" vid="32">
+                        <h1 class="text-5xl font-light text-sand-100 tracking-tight" vid="33">Hummus</h1>
+                        <span class="text-3xl font-light text-sand-100" vid="34">$12.00</span>
+                    </div>
+                    <p class="mt-6 text-xl text-sand-300 font-light leading-relaxed max-w-2xl" vid="35">
+                        Classic chickpea hummus with tahini, lemon, and Lebanese extra virgin olive oil. Silky smooth texture with a rich, nutty finish.
+                    </p>
+                </div>
+
+                
+                <div class="grid grid-cols-2 gap-12 py-12 border-y border-stone-850" vid="36">
+                    <div vid="37">
+                        <h4 class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-6" vid="38">Ingredients</h4>
+                        <p class="text-sand-400 leading-relaxed font-light" vid="39">
+                            Organic Chickpeas, Premium Tahini, Fresh Squeezed Lemon, Garlic, Sea Salt, Extra Virgin Olive Oil, Aleppo Pepper Garnish.
+                        </p>
+                    </div>
+                    <div vid="40">
+                        <h4 class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-6" vid="41">Served With</h4>
+                        <p class="text-sand-400 leading-relaxed font-light" vid="42">
+                            House-baked Khubz (Pita). Sliced vegetables available upon request for GF option.
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="space-y-12 py-4" vid="43">
+                    
+                    <div vid="44">
+                        <h4 class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-6" vid="45">Spice Level</h4>
+                        <div class="flex gap-4" vid="46">
+                            <button class="flex-1 py-3 px-4 rounded border border-terracotta-500 bg-terracotta-500/10 text-sand-100 text-sm transition-all" vid="47">Classic (Mild)</button>
+                            <button class="flex-1 py-3 px-4 rounded border border-stone-800 hover:border-stone-600 text-sand-400 text-sm transition-all" vid="48">Medium Heat</button>
+                            <button class="flex-1 py-3 px-4 rounded border border-stone-800 hover:border-stone-600 text-sand-400 text-sm transition-all" vid="49">Spicy (Shatta)</button>
+                        </div>
+                    </div>
+
+                    
+                    <div vid="50">
+                        <h4 class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-6" vid="51">Enhance Your Dish</h4>
+                        <div class="space-y-3" vid="52">
+                            <label class="flex items-center justify-between p-4 rounded border border-stone-800 hover:border-stone-700 cursor-pointer transition-colors" vid="53">
+                                <div class="flex items-center gap-3" vid="54">
+                                    <div class="w-5 h-5 rounded border border-stone-700 flex items-center justify-center bg-stone-900" vid="55"></div>
+                                    <span class="text-sand-200 text-sm" vid="56">Extra Pita Bread</span>
+                                </div>
+                                <span class="text-sand-400 text-sm" vid="57">+$2.00</span>
+                            </label>
+                            <label class="flex items-center justify-between p-4 rounded border border-stone-800 hover:border-stone-700 cursor-pointer transition-colors" vid="58">
+                                <div class="flex items-center gap-3" vid="59">
+                                    <div class="w-5 h-5 rounded border border-terracotta-500 flex items-center justify-center bg-terracotta-500" vid="60">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" vid="61"><polyline points="20 6 9 17 4 12" vid="62"></polyline></svg>
+                                    </div>
+                                    <span class="text-sand-200 text-sm" vid="63">Add Pine Nuts &amp; Sizzling Butter</span>
+                                </div>
+                                <span class="text-sand-400 text-sm" vid="64">+$4.00</span>
+                            </label>
+                            <label class="flex items-center justify-between p-4 rounded border border-stone-800 hover:border-stone-700 cursor-pointer transition-colors" vid="65">
+                                <div class="flex items-center gap-3" vid="66">
+                                    <div class="w-5 h-5 rounded border border-stone-700 flex items-center justify-center bg-stone-900" vid="67"></div>
+                                    <span class="text-sand-200 text-sm" vid="68">Sub Sliced Vegetables (GF)</span>
+                                </div>
+                                <span class="text-sand-400 text-sm" vid="69">+$3.00</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    
+                    <div vid="70">
+                        <h4 class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-4" vid="71">Special Instructions</h4>
+                        <textarea class="w-full bg-stone-900 border border-stone-850 rounded p-4 text-sm text-sand-200 focus:outline-none focus:border-terracotta-500 transition-colors placeholder:text-stone-600" rows="3" placeholder="Any allergies or preferences? Let us know..." vid="72"></textarea>
+                    </div>
+                </div>
+
+                
+                <div class="pt-8 flex items-center gap-6" vid="73">
+                    <div class="flex items-center gap-6 bg-stone-900 border border-stone-850 rounded px-6 py-4" vid="74">
+                        <button class="text-stone-500 hover:text-sand-100" vid="75"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" vid="76"><line x1="5" y1="12" x2="19" y2="12" vid="77"></line></svg></button>
+                        <span class="text-lg font-medium text-sand-100 min-w-[20px] text-center" vid="78">1</span>
+                        <button class="text-stone-500 hover:text-sand-100" vid="79"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" vid="80"><line x1="12" y1="5" x2="12" y2="19" vid="81"></line><line x1="5" y1="12" x2="19" y2="12" vid="82"></line></svg></button>
+                    </div>
+                    <button class="flex-1 bg-sand-100 hover:bg-white text-stone-950 px-8 py-4 rounded font-medium tracking-wide transition-colors flex justify-between items-center" vid="83">
+                        <span class="uppercase text-sm" vid="84">Add to Order</span>
+                        <span class="text-lg" vid="85">$16.00</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <aside class="w-[380px] bg-[#0A0908] border-l border-stone-850 flex flex-col h-full z-50 flex-shrink-0 shadow-2xl relative" vid="86">
+        <div class="px-8 py-8 flex justify-between items-center border-b border-stone-850/50" vid="87">
+            <div class="flex items-baseline gap-3" vid="88">
+                <h2 class="text-sm font-medium tracking-[0.15em] uppercase text-sand-100" vid="89">Your Order</h2>
+                <span class="text-xs text-terracotta-400 font-medium bg-terracotta-500/10 px-2 py-0.5 rounded-full" vid="90">2 items</span>
+            </div>
+            <button class="text-stone-500 hover:text-sand-100 transition-colors" vid="91">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vid="92"><line x1="18" y1="6" x2="6" y2="18" vid="93"></line><line x1="6" y1="6" x2="18" y2="18" vid="94"></line></svg>
+            </button>
+        </div>
+        <div class="px-8 py-4 border-b border-stone-850/50 bg-[#12100E]" vid="95">
+            <p class="text-[0.65rem] uppercase tracking-widest text-stone-500 font-medium mb-1" vid="96">Ordering from</p>
+            <p class="text-sm font-medium text-sand-200" vid="97">MAMNOON</p>
+        </div>
+        <div class="flex-1 overflow-y-auto p-8 space-y-8" vid="98">
+            <div class="flex flex-col gap-3" vid="99">
+                <div class="flex justify-between items-start" vid="100">
+                    <h4 class="text-sm font-medium text-sand-100 pr-4" vid="101">Hummus</h4>
+                    <span class="text-sm font-medium text-sand-100" vid="102">$12.00</span>
+                </div>
+                <div class="flex justify-between items-center mt-1" vid="103">
+                    <span class="text-xs text-sand-400 font-light" vid="104">Classic</span>
+                    <div class="flex items-center gap-3 bg-[#1A1715] border border-stone-800 rounded-full px-1 py-1" vid="105">
+                        <button class="w-7 h-7 rounded-full flex items-center justify-center text-stone-400 hover:text-terracotta-400" vid="106"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" vid="107"><polyline points="3 6 5 6 21 6" vid="108"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" vid="109"></path></svg></button>
+                        <span class="text-sm font-medium text-sand-200" vid="110">1</span>
+                        <button class="w-7 h-7 rounded-full flex items-center justify-center text-stone-400 hover:text-sand-100" vid="111"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" vid="112"><line x1="12" y1="5" x2="12" y2="19" vid="113"></line><line x1="5" y1="12" x2="19" y2="12" vid="114"></line></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3" vid="115">
+                <div class="flex justify-between items-start" vid="116">
+                    <h4 class="text-sm font-medium text-sand-100 pr-4" vid="117">Za'atar Spice Blend</h4>
+                    <span class="text-sm font-medium text-sand-100" vid="118">$12.00</span>
+                </div>
+                <div class="flex justify-between items-center mt-1" vid="119">
+                    <span class="text-xs text-sand-400 font-light" vid="120">Original Mix</span>
+                    <div class="flex items-center gap-3 bg-[#1A1715] border border-stone-800 rounded-full px-1 py-1" vid="121">
+                        <button class="w-7 h-7 rounded-full flex items-center justify-center text-stone-400 hover:text-terracotta-400" vid="122"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" vid="123"><polyline points="3 6 5 6 21 6" vid="124"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" vid="125"></path></svg></button>
+                        <span class="text-sm font-medium text-sand-200" vid="126">1</span>
+                        <button class="w-7 h-7 rounded-full flex items-center justify-center text-stone-400 hover:text-sand-100" vid="127"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" vid="128"><line x1="12" y1="5" x2="12" y2="19" vid="129"></line><line x1="5" y1="12" x2="19" y2="12" vid="130"></line></svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-auto border-t border-stone-850/50 bg-[#0A0908] p-8" vid="131">
+            <div class="flex justify-between items-center mb-6" vid="132">
+                <span class="text-sm font-medium text-sand-400" vid="133">Subtotal</span>
+                <span class="text-lg font-medium text-sand-100" vid="134">$24.00</span>
+            </div>
+            <button class="w-full bg-sand-100 text-stone-950 hover:bg-white px-6 py-4 rounded text-sm font-medium tracking-[0.05em] uppercase transition-colors" vid="135">Sign in to place your order</button>
+        </div>
+    </aside>
+
+</body></html>

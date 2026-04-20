@@ -1,0 +1,202 @@
+<html lang="en" class="h-full antialiased" vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">Checkout — NADI MAMA</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" vid="6">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="7">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet" vid="8">
+    <script vid="9">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        stone: {
+                            850: '#23201E',
+                            900: '#1A1715',
+                            950: '#12100E',
+                        },
+                        terracotta: {
+                            400: '#E27B58',
+                            500: '#D35C3A',
+                            600: '#B84A2A',
+                        },
+                        sand: {
+                            100: '#FDFBF9',
+                            200: '#F4EFEA',
+                            300: '#E6DCD3',
+                            400: '#A89F98',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style vid="10">
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #2D2622; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D35C3A; }
+        
+        .header-blur {
+            background: linear-gradient(to bottom, rgba(18, 16, 14, 0.95) 0%, rgba(18, 16, 14, 0.8) 50%, rgba(18, 16, 14, 0) 100%);
+            backdrop-filter: blur(8px);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #D35C3A !important;
+            box-shadow: 0 0 0 1px rgba(211, 92, 58, 0.2);
+        }
+    </style>
+</head>
+<body class="h-full bg-stone-950 text-sand-200 overflow-hidden font-sans" vid="11">
+
+    <div class="flex h-full w-full" vid="12">
+        
+        <div class="flex-1 overflow-y-auto" vid="13">
+            
+            <header class="sticky top-0 z-50 header-blur px-12 py-8 flex items-center justify-between" vid="14">
+                <a href="#" class="flex items-center gap-3 group" vid="15">
+                    <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-sand-100" vid="16">
+                        <path d="M20 0L23.5 12L32 3L27 15L40 20L27 25L32 37L23.5 28L20 40L16.5 28L8 37L13 25L0 20L13 15L8 3L16.5 12L20 0Z" fill="currentColor" vid="17"></path>
+                    </svg>
+                    <span class="text-sm tracking-[0.2em] font-medium uppercase mt-0.5 text-sand-100" vid="18">Nadi Mama</span>
+                </a>
+                <div class="flex items-center gap-4" vid="19">
+                    <a href="#" class="text-xs tracking-widest uppercase text-sand-400 hover:text-sand-100 transition-colors" vid="20">Back to Menu</a>
+                </div>
+            </header>
+
+            <main class="max-w-3xl mx-auto px-12 py-12" vid="21">
+                <h1 class="text-4xl font-light text-sand-100 mb-12 tracking-tight" vid="22">Checkout</h1>
+
+                <form class="space-y-16" vid="23">
+                    
+                    <section vid="24">
+                        <div class="flex items-center gap-4 mb-8" vid="25">
+                            <span class="text-xs font-medium text-terracotta-500 border border-terracotta-500/30 px-2 py-0.5 rounded" vid="26">01</span>
+                            <h2 class="text-sm tracking-[0.15em] uppercase font-medium text-sand-100" vid="27">Delivery Details</h2>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-6" vid="28">
+                            <div class="col-span-2 space-y-2" vid="29">
+                                <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="30">Street Address</label>
+                                <input type="text" placeholder="123 Pike St" class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all" vid="31">
+                            </div>
+                            <div class="space-y-2" vid="32">
+                                <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="33">Apartment / Suite</label>
+                                <input type="text" placeholder="Apt 4B" class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all" vid="34">
+                            </div>
+                            <div class="space-y-2" vid="35">
+                                <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="36">City</label>
+                                <input type="text" value="Seattle" class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all" vid="37">
+                            </div>
+                            <div class="col-span-2 space-y-2" vid="38">
+                                <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="39">Delivery Instructions</label>
+                                <textarea rows="3" placeholder="Gate code or drop-off preference..." class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all resize-none" vid="40"></textarea>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                    <section vid="41">
+                        <div class="flex items-center gap-4 mb-8" vid="42">
+                            <span class="text-xs font-medium text-terracotta-500 border border-terracotta-500/30 px-2 py-0.5 rounded" vid="43">02</span>
+                            <h2 class="text-sm tracking-[0.15em] uppercase font-medium text-sand-100" vid="44">Payment Method</h2>
+                        </div>
+                        
+                        <div class="space-y-6" vid="45">
+                            <div class="space-y-2" vid="46">
+                                <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="47">Cardholder Name</label>
+                                <input type="text" placeholder="Sami Jarrar" class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all" vid="48">
+                            </div>
+                            <div class="space-y-2" vid="49">
+                                <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="50">Card Number</label>
+                                <div class="relative" vid="51">
+                                    <input type="text" placeholder="0000 0000 0000 0000" class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all" vid="52">
+                                    <div class="absolute right-4 top-1/2 -translate-y-1/2 flex gap-2" vid="53">
+                                        <div class="w-8 h-5 bg-stone-800 rounded-sm opacity-50" vid="54"></div>
+                                        <div class="w-8 h-5 bg-stone-800 rounded-sm opacity-50" vid="55"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-6" vid="56">
+                                <div class="space-y-2" vid="57">
+                                    <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="58">Expiry Date</label>
+                                    <input type="text" placeholder="MM / YY" class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all" vid="59">
+                                </div>
+                                <div class="space-y-2" vid="60">
+                                    <label class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium" vid="61">CVC</label>
+                                    <input type="text" placeholder="•••" class="w-full bg-stone-900 border border-stone-800 rounded px-4 py-3 text-sm text-sand-100 placeholder:text-stone-600 transition-all" vid="62">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="pt-8 border-t border-stone-900" vid="63">
+                        <p class="text-xs text-stone-500 leading-relaxed mb-8" vid="64">
+                            By clicking "Place Order", you agree to Nadi Mama's Terms of Service and Privacy Policy. Your payment information is encrypted and securely processed.
+                        </p>
+                        <button type="submit" class="w-full bg-terracotta-500 hover:bg-terracotta-400 text-white py-5 rounded text-sm font-medium tracking-[0.1em] uppercase transition-all shadow-lg" vid="65">
+                            Place Order — $29.45
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
+
+        
+        <aside class="w-[420px] bg-[#0A0908] border-l border-stone-850 flex flex-col h-full z-50 flex-shrink-0" vid="66">
+            <div class="px-10 py-12 flex flex-col h-full" vid="67">
+                <div class="flex items-center justify-between mb-10" vid="68">
+                    <h3 class="text-sm font-medium tracking-[0.15em] uppercase text-sand-100" vid="69">Order Summary</h3>
+                    <span class="text-xs text-sand-400" vid="70">2 Items</span>
+                </div>
+
+                <div class="flex-1 space-y-8 overflow-y-auto no-scrollbar" vid="71">
+                    <div class="flex justify-between items-start" vid="72">
+                        <div vid="73">
+                            <h4 class="text-sm font-medium text-sand-100 mb-1" vid="74">Hummus</h4>
+                            <p class="text-xs text-stone-500" vid="75">Classic with fresh pita</p>
+                            <span class="text-xs text-terracotta-400 mt-2 block" vid="76">Qty: 1</span>
+                        </div>
+                        <span class="text-sm font-medium text-sand-200" vid="77">$12.00</span>
+                    </div>
+
+                    <div class="flex justify-between items-start" vid="78">
+                        <div vid="79">
+                            <h4 class="text-sm font-medium text-sand-100 mb-1" vid="80">Za'atar Spice Blend</h4>
+                            <p class="text-xs text-stone-500" vid="81">Signature house-made retail</p>
+                            <span class="text-xs text-terracotta-400 mt-2 block" vid="82">Qty: 1</span>
+                        </div>
+                        <span class="text-sm font-medium text-sand-200" vid="83">$12.00</span>
+                    </div>
+                </div>
+
+                <div class="mt-auto pt-10 border-t border-stone-900 space-y-4" vid="84">
+                    <div class="flex justify-between text-xs text-sand-400" vid="85">
+                        <span vid="86">Subtotal</span>
+                        <span vid="87">$24.00</span>
+                    </div>
+                    <div class="flex justify-between text-xs text-sand-400" vid="88">
+                        <span vid="89">Delivery Fee</span>
+                        <span vid="90">$3.50</span>
+                    </div>
+                    <div class="flex justify-between text-xs text-sand-400 pb-2" vid="91">
+                        <span vid="92">Estimated Tax</span>
+                        <span vid="93">$1.95</span>
+                    </div>
+                    <div class="flex justify-between items-center pt-4 border-t border-stone-900" vid="94">
+                        <span class="text-sm font-medium text-sand-100" vid="95">Total</span>
+                        <span class="text-xl font-medium text-sand-100" vid="96">$29.45</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+</body></html>

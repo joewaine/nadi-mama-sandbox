@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Date Night Package",
+    "upserveId": "pkg_001",
+    "orderDate": "2024-03-01",
+    "number": 15,
+    "soldOut": false
+  },
+  {
+    "name": "Family Feast Bundle",
+    "upserveId": "pkg_002",
+    "orderDate": "2024-03-01",
+    "number": 8,
+    "soldOut": false
+  },
+  {
+    "name": "Spice Collection Gift Set",
+    "upserveId": "pkg_003",
+    "orderDate": "2024-03-01",
+    "number": 25,
+    "soldOut": false
+  },
+  {
+    "name": "$50 Gift Voucher",
+    "upserveId": "pkg_004",
+    "orderDate": "2024-03-01",
+    "number": 50,
+    "soldOut": false
+  }
+]

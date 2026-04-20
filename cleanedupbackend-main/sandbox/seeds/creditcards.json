@@ -1,0 +1,38 @@
+[
+  {
+    "email": "demo@example.com",
+    "approvalData": {
+      "uniqueTransId": "sandbox_cc_001",
+      "maskedAccount": "XXXXXXXXXXXX4242",
+      "cardHolderName": "Demo User",
+      "accountExpiryDate": "12/28",
+      "resultMessage": "Approved"
+    },
+    "primary": true,
+    "maskedNumber": "XXXXXXXXXXXX4242"
+  },
+  {
+    "email": "demo@example.com",
+    "approvalData": {
+      "uniqueTransId": "sandbox_cc_002",
+      "maskedAccount": "XXXXXXXXXXXX5555",
+      "cardHolderName": "Demo User",
+      "accountExpiryDate": "06/27",
+      "resultMessage": "Approved"
+    },
+    "primary": false,
+    "maskedNumber": "XXXXXXXXXXXX5555"
+  },
+  {
+    "email": "sarah@example.com",
+    "approvalData": {
+      "uniqueTransId": "sandbox_cc_003",
+      "maskedAccount": "XXXXXXXXXXXX1234",
+      "cardHolderName": "Sarah Johnson",
+      "accountExpiryDate": "09/26",
+      "resultMessage": "Approved"
+    },
+    "primary": true,
+    "maskedNumber": "XXXXXXXXXXXX1234"
+  }
+]

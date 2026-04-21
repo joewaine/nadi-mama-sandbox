@@ -17,7 +17,7 @@ const restaurantMeta: Record<
   mamnoon: {
     name: 'Mamnoon',
     image:
-      'https://images.unsplash.com/photo-1542314831-c6a4d14b9a52?q=80&w=2940&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2940&auto=format&fit=crop',
     tagline: 'Eastern Mediterranean Kitchen',
     location: 'Seattle · Capitol Hill',
     description:

@@ -62,7 +62,7 @@ const chapters = [
     >
       <div class="absolute inset-0 w-full h-full z-0">
         <img
-          src="https://images.unsplash.com/photo-1542314831-c6a4d14b9a52?q=80&w=2940&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=2940&auto=format&fit=crop"
           alt="Eastern Mediterranean spread"
           class="w-full h-full object-cover object-center opacity-70"
         />

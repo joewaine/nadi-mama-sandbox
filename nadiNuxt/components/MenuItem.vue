@@ -22,12 +22,12 @@ function add() {
 
 <template>
   <article
-    class="group grid grid-cols-[112px_1fr_auto] gap-6 items-start py-8 border-b border-stone-850/50 hover:border-stone-700 transition-colors cursor-pointer pr-4"
+    class="group grid grid-cols-[80px_1fr_auto] sm:grid-cols-[112px_1fr_auto] gap-3 sm:gap-6 items-start py-6 sm:py-8 border-b border-stone-850/50 hover:border-stone-700 transition-colors cursor-pointer pr-2 sm:pr-4"
     @click="add"
   >
     <!-- Thumbnail -->
     <div
-      class="relative w-[112px] h-[112px] overflow-hidden rounded-sm bg-stone-900 border border-stone-850"
+      class="relative w-20 h-20 sm:w-[112px] sm:h-[112px] overflow-hidden rounded-sm bg-stone-900 border border-stone-850 flex-shrink-0"
     >
       <img
         v-if="item.imageUrl"
@@ -45,15 +45,15 @@ function add() {
     </div>
 
     <!-- Content -->
-    <div class="flex flex-col gap-2 max-w-xl pt-1">
+    <div class="flex flex-col gap-1.5 sm:gap-2 max-w-xl pt-0 sm:pt-1 min-w-0">
       <h3
-        class="text-lg font-medium text-sand-100 group-hover:text-terracotta-400 transition-colors"
+        class="text-base sm:text-lg font-medium text-sand-100 group-hover:text-terracotta-400 transition-colors"
       >
         {{ item.name }}
       </h3>
       <p
         v-if="item.description"
-        class="text-sm text-sand-400 leading-relaxed font-light line-clamp-2"
+        class="text-xs sm:text-sm text-sand-400 leading-relaxed font-light line-clamp-2"
       >
         {{ item.description }}
       </p>
@@ -69,12 +69,12 @@ function add() {
     </div>
 
     <!-- Price + Add -->
-    <div class="flex flex-col items-end gap-4 pt-1">
-      <span class="text-lg font-light text-sand-200 tracking-wide">
+    <div class="flex flex-col items-end gap-2 sm:gap-4 pt-0 sm:pt-1">
+      <span class="text-base sm:text-lg font-light text-sand-200 tracking-wide">
         ${{ (item.price / 100).toFixed(2) }}
       </span>
       <button
-        class="w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300"
+        class="w-11 h-11 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-all duration-300"
         :class="
           added
             ? 'bg-terracotta-500 text-white border-terracotta-500 scale-110'

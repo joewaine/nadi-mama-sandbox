@@ -91,7 +91,7 @@ const sectionSubtitle = computed(() => {
   <div class="flex flex-col">
     <!-- Hero -->
     <section
-      class="relative h-[60vh] min-h-[500px] flex-shrink-0 w-full flex items-end pb-16 px-8 md:px-12"
+      class="relative h-[50vh] min-h-[380px] sm:min-h-[480px] flex-shrink-0 w-full flex items-end pb-10 sm:pb-16 pt-24 sm:pt-28 px-6 sm:px-8 md:px-12"
     >
       <div class="absolute inset-0 w-full h-full z-0">
         <img
@@ -102,21 +102,21 @@ const sectionSubtitle = computed(() => {
         <div class="absolute inset-0 hero-gradient" />
       </div>
       <div class="relative z-10 max-w-3xl">
-        <div class="inline-flex items-center gap-3 mb-6">
-          <span class="w-8 h-[1px] bg-terracotta-500" />
+        <div class="inline-flex items-center gap-3 mb-4 sm:mb-6">
+          <span class="w-6 sm:w-8 h-[1px] bg-terracotta-500" />
           <span
-            class="text-xs tracking-[0.2em] uppercase text-terracotta-400 font-medium"
+            class="text-[0.65rem] sm:text-xs tracking-[0.2em] uppercase text-terracotta-400 font-medium"
           >
             {{ meta.location }}
           </span>
         </div>
         <h1
-          class="text-5xl lg:text-7xl font-light text-sand-100 mb-6 tracking-tight"
+          class="text-4xl sm:text-5xl lg:text-7xl font-light text-sand-100 mb-4 sm:mb-6 tracking-tight"
         >
           {{ meta.name }}
         </h1>
         <p
-          class="text-lg lg:text-xl text-sand-300 font-light leading-relaxed max-w-2xl"
+          class="text-base sm:text-lg lg:text-xl text-sand-300 font-light leading-relaxed max-w-2xl"
         >
           {{ meta.description }}
         </p>
@@ -126,13 +126,13 @@ const sectionSubtitle = computed(() => {
     <!-- Category filter pills -->
     <div
       v-if="sections.length > 0"
-      class="sticky top-[88px] z-40 bg-stone-950/90 backdrop-blur-md border-b border-stone-850 px-8 md:px-12 py-4"
+      class="sticky top-[60px] sm:top-[72px] md:top-[88px] z-40 bg-stone-950/90 backdrop-blur-md border-b border-stone-850 px-6 sm:px-8 md:px-12 py-3 sm:py-4"
     >
-      <div class="flex overflow-x-auto no-scrollbar gap-4 items-center">
+      <div class="flex overflow-x-auto no-scrollbar gap-3 sm:gap-4 items-center -mx-1 px-1">
         <button
           v-for="section in sections"
           :key="section.name"
-          class="whitespace-nowrap px-6 py-2.5 rounded-full text-sm font-medium tracking-wide transition-all border"
+          class="whitespace-nowrap px-5 sm:px-6 py-2.5 min-h-[40px] rounded-full text-sm font-medium tracking-wide transition-all border flex-shrink-0"
           :class="
             activeSection === section.name
               ? 'bg-terracotta-500 text-white border-terracotta-500'
@@ -146,15 +146,15 @@ const sectionSubtitle = computed(() => {
     </div>
 
     <!-- Menu -->
-    <section class="flex-1 px-8 md:px-12 py-16 max-w-5xl mx-auto w-full">
+    <section class="flex-1 px-6 sm:px-8 md:px-12 py-10 sm:py-16 max-w-5xl mx-auto w-full">
       <div
         v-if="activeSection"
-        class="mb-10 flex items-baseline gap-4 border-b border-stone-850 pb-6"
+        class="mb-8 sm:mb-10 flex flex-col sm:flex-row sm:items-baseline sm:gap-4 border-b border-stone-850 pb-4 sm:pb-6"
       >
-        <h2 class="text-3xl font-light text-sand-100">{{ activeSection }}</h2>
+        <h2 class="text-2xl sm:text-3xl font-light text-sand-100">{{ activeSection }}</h2>
         <span
           v-if="sectionSubtitle"
-          class="text-sm text-sand-400 font-light"
+          class="text-xs sm:text-sm text-sand-400 font-light mt-1 sm:mt-0"
         >
           {{ sectionSubtitle }}
         </span>

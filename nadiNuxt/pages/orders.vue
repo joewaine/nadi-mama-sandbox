@@ -57,9 +57,9 @@ const favoriteDishes = computed(() => {
 </script>
 
 <template>
-  <div class="flex-1 px-8 lg:px-24 pt-32 pb-16 max-w-7xl mx-auto w-full">
-    <div v-if="!loggedIn" class="py-32 text-center">
-      <h1 class="text-3xl font-light text-sand-100 mb-4 tracking-tight">
+  <div class="flex-1 px-6 sm:px-8 lg:px-24 pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 max-w-7xl mx-auto w-full">
+    <div v-if="!loggedIn" class="py-20 sm:py-32 text-center">
+      <h1 class="text-2xl sm:text-3xl font-light text-sand-100 mb-4 tracking-tight">
         Sign in to view your account
       </h1>
       <p class="text-sand-400 font-light mb-8">
@@ -67,7 +67,7 @@ const favoriteDishes = computed(() => {
       </p>
       <NuxtLink
         to="/"
-        class="inline-block bg-terracotta-500 hover:bg-terracotta-400 text-white px-8 py-3 rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors"
+        class="inline-flex items-center justify-center bg-terracotta-500 hover:bg-terracotta-400 text-white px-8 py-3 min-h-[48px] rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors"
       >
         Return Home
       </NuxtLink>
@@ -75,10 +75,10 @@ const favoriteDishes = computed(() => {
 
     <div
       v-else
-      class="grid grid-cols-1 lg:grid-cols-12 gap-12"
+      class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12"
     >
       <!-- Sidebar -->
-      <aside class="lg:col-span-3 space-y-8">
+      <aside class="lg:col-span-3 space-y-6 sm:space-y-8">
         <div>
           <h1 class="text-2xl font-light text-sand-100 mb-1 tracking-tight">
             Account
@@ -89,35 +89,35 @@ const favoriteDishes = computed(() => {
             {{ user?.name || 'Guest' }}
           </p>
         </div>
-        <nav class="flex flex-col gap-2">
+        <nav class="flex flex-col gap-1 sm:gap-2 -mx-1 sm:mx-0 overflow-x-auto lg:overflow-visible lg:flex-col flex-row flex-wrap lg:flex-nowrap">
           <a
             href="#orders"
-            class="px-4 py-2 bg-stone-900 border border-stone-800 rounded-sm text-sm text-sand-100 font-medium"
+            class="px-4 py-3 min-h-[44px] flex items-center bg-stone-900 border border-stone-800 rounded-sm text-sm text-sand-100 font-medium whitespace-nowrap"
           >
             Order History
           </a>
           <a
             href="#favorites"
-            class="px-4 py-2 hover:bg-stone-900/50 rounded-sm text-sm text-sand-400 hover:text-sand-200 transition-colors"
+            class="px-4 py-3 min-h-[44px] flex items-center hover:bg-stone-900/50 rounded-sm text-sm text-sand-400 hover:text-sand-200 transition-colors whitespace-nowrap"
           >
             Favorite Dishes
           </a>
           <a
             href="#addresses"
-            class="px-4 py-2 hover:bg-stone-900/50 rounded-sm text-sm text-sand-400 hover:text-sand-200 transition-colors"
+            class="px-4 py-3 min-h-[44px] flex items-center hover:bg-stone-900/50 rounded-sm text-sm text-sand-400 hover:text-sand-200 transition-colors whitespace-nowrap"
           >
             Saved Addresses
           </a>
           <a
             href="#"
-            class="px-4 py-2 hover:bg-stone-900/50 rounded-sm text-sm text-sand-400 hover:text-sand-200 transition-colors"
+            class="px-4 py-3 min-h-[44px] flex items-center hover:bg-stone-900/50 rounded-sm text-sm text-sand-400 hover:text-sand-200 transition-colors whitespace-nowrap"
             @click.prevent
           >
             Payment Methods
           </a>
-          <div class="h-px bg-stone-850 my-2" />
+          <div class="hidden lg:block h-px bg-stone-850 my-2" />
           <button
-            class="px-4 py-2 text-sm text-stone-500 hover:text-terracotta-400 transition-colors text-left"
+            class="px-4 py-3 min-h-[44px] flex items-center text-sm text-stone-500 hover:text-terracotta-400 transition-colors text-left whitespace-nowrap"
             @click="logout"
           >
             Sign Out
@@ -126,7 +126,7 @@ const favoriteDishes = computed(() => {
       </aside>
 
       <!-- Content -->
-      <section class="lg:col-span-9 space-y-16">
+      <section class="lg:col-span-9 space-y-12 sm:space-y-16">
         <!-- Orders -->
         <div id="orders">
           <div

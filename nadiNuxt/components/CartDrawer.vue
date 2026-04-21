@@ -28,11 +28,11 @@ function goCheckout() {
 
 <template>
   <aside
-    class="w-[380px] bg-[#0A0908] border-l border-stone-850 flex flex-col h-full z-40 flex-shrink-0 shadow-2xl relative"
+    class="w-full lg:w-[380px] max-w-[380px] bg-[#0A0908] border-l border-stone-850 flex flex-col h-full z-40 flex-shrink-0 shadow-2xl relative"
   >
     <!-- Header -->
     <div
-      class="px-8 py-8 flex justify-between items-center border-b border-stone-850/50"
+      class="px-6 sm:px-8 py-6 sm:py-8 flex justify-between items-center border-b border-stone-850/50"
     >
       <div class="flex items-baseline gap-3">
         <h2 class="text-sm font-medium tracking-[0.15em] uppercase text-sand-100">
@@ -56,7 +56,7 @@ function goCheckout() {
     <!-- Ordering from (only when cart has items) -->
     <div
       v-if="cart.length > 0"
-      class="px-8 py-4 border-b border-stone-850/50 bg-[#12100E]"
+      class="px-6 sm:px-8 py-4 border-b border-stone-850/50 bg-[#12100E]"
     >
       <p
         class="text-[0.65rem] uppercase tracking-widest text-stone-500 font-medium mb-1"
@@ -74,7 +74,7 @@ function goCheckout() {
       class="flex-1 flex flex-col overflow-y-auto no-scrollbar"
     >
       <!-- Empty -->
-      <div class="px-8 py-16 flex flex-col items-center text-center gap-6">
+      <div class="px-6 sm:px-8 py-12 sm:py-16 flex flex-col items-center text-center gap-6">
         <div
           class="w-16 h-16 rounded-full bg-stone-900 border border-stone-850 flex items-center justify-center text-stone-700"
         >
@@ -105,7 +105,7 @@ function goCheckout() {
         </div>
       </div>
 
-      <div class="mt-4 px-8">
+      <div class="mt-4 px-6 sm:px-8">
         <div class="flex items-center gap-3 mb-6">
           <span
             class="text-[0.65rem] uppercase tracking-widest text-stone-500 font-bold"
@@ -161,7 +161,7 @@ function goCheckout() {
     <!-- Items -->
     <div
       v-else
-      class="flex-1 overflow-y-auto p-8 space-y-8 no-scrollbar"
+      class="flex-1 overflow-y-auto p-6 sm:p-8 space-y-6 sm:space-y-8 no-scrollbar"
     >
       <div
         v-for="(item, i) in cart"
@@ -248,7 +248,7 @@ function goCheckout() {
 
     <!-- Footer -->
     <div
-      class="mt-auto border-t border-stone-850/50 bg-[#0A0908] p-8"
+      class="mt-auto border-t border-stone-850/50 bg-[#0A0908] p-6 sm:p-8"
     >
       <div class="flex justify-between items-center mb-6">
         <span

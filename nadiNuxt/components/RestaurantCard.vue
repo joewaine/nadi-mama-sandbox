@@ -16,7 +16,7 @@ defineProps<{
     class="group relative block overflow-hidden bg-stone-900 border border-stone-850 hover:border-stone-700 transition-all duration-500"
   >
     <!-- Image -->
-    <div class="relative h-[420px] overflow-hidden">
+    <div class="relative h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden">
       <img
         :src="image"
         :alt="name"
@@ -35,13 +35,13 @@ defineProps<{
       </div>
 
       <!-- Bottom content -->
-      <div class="absolute bottom-0 left-0 right-0 p-8">
+      <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
         <h3
-          class="text-3xl font-light text-sand-100 mb-3 tracking-tight"
+          class="text-2xl sm:text-3xl font-light text-sand-100 mb-2 sm:mb-3 tracking-tight"
         >
           {{ name }}
         </h3>
-        <p class="text-sm text-sand-300 font-light leading-relaxed max-w-md">
+        <p class="text-xs sm:text-sm text-sand-300 font-light leading-relaxed max-w-md">
           {{ description }}
         </p>
       </div>
@@ -49,7 +49,7 @@ defineProps<{
 
     <!-- Footer -->
     <div
-      class="px-8 py-6 border-t border-stone-850 flex items-center justify-between"
+      class="px-5 sm:px-8 py-5 sm:py-6 border-t border-stone-850 flex items-center justify-between gap-4"
     >
       <div class="flex flex-col gap-1">
         <span

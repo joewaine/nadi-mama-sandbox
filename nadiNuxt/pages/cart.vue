@@ -154,12 +154,12 @@ async function placeOrder() {
     <div class="flex-1 min-w-0">
       <!-- Header -->
       <header
-        class="sticky top-0 z-50 header-gradient px-8 md:px-12 py-6 md:py-8 flex items-center justify-between"
+        class="sticky top-0 z-50 header-gradient px-5 sm:px-8 md:px-12 py-4 sm:py-6 md:py-8 flex items-center justify-between"
       >
-        <NuxtLink to="/" class="flex items-center gap-3 group">
-          <NadiLogo :size="28" class="text-sand-100" />
+        <NuxtLink to="/" class="flex items-center gap-2 sm:gap-3 group min-w-0">
+          <NadiLogo :size="28" class="text-sand-100 flex-shrink-0" />
           <span
-            class="text-sm tracking-[0.2em] font-medium uppercase mt-0.5 text-sand-100"
+            class="text-xs sm:text-sm tracking-[0.15em] sm:tracking-[0.2em] font-medium uppercase mt-0.5 text-sand-100 truncate"
           >
             Nadi Mama
           </span>
@@ -168,7 +168,7 @@ async function placeOrder() {
           <NuxtLink
             v-if="!confirmation"
             to="/menu/mamnoon"
-            class="text-[11px] md:text-xs tracking-[0.15em] uppercase text-sand-400 hover:text-sand-100 transition-colors"
+            class="text-[10px] sm:text-[11px] md:text-xs tracking-[0.15em] uppercase text-sand-400 hover:text-sand-100 transition-colors whitespace-nowrap"
           >
             Back to Menu
           </NuxtLink>
@@ -178,11 +178,11 @@ async function placeOrder() {
       <!-- Confirmation -->
       <main
         v-if="confirmation"
-        class="confirmation-bg pt-16 pb-24 px-6 md:px-8"
+        class="confirmation-bg pt-10 sm:pt-16 pb-16 sm:pb-24 px-5 sm:px-6 md:px-8"
       >
         <div class="max-w-2xl mx-auto flex flex-col items-center">
-          <div class="mb-8">
-            <svg class="w-24 h-24" viewBox="0 0 52 52">
+          <div class="mb-6 sm:mb-8">
+            <svg class="w-20 h-20 sm:w-24 sm:h-24" viewBox="0 0 52 52">
               <circle
                 class="checkmark-circle"
                 cx="26"
@@ -200,18 +200,18 @@ async function placeOrder() {
             </svg>
           </div>
 
-          <div class="text-center mb-12 fade-up">
-            <h1 class="text-4xl font-light text-sand-100 mb-4 tracking-tight">
+          <div class="text-center mb-10 sm:mb-12 fade-up">
+            <h1 class="text-3xl sm:text-4xl font-light text-sand-100 mb-3 sm:mb-4 tracking-tight">
               Shukran! Your order is placed.
             </h1>
-            <p class="text-sand-400 text-lg font-light">
+            <p class="text-sand-400 text-base sm:text-lg font-light">
               We've sent a confirmation to
-              <span class="text-sand-200">{{ confirmation.email }}</span>
+              <span class="text-sand-200 break-all">{{ confirmation.email }}</span>
             </p>
           </div>
 
           <div
-            class="w-full bg-[#1A1715] border border-stone-850 rounded-lg p-8 mb-8 grid grid-cols-2 gap-8 fade-up"
+            class="w-full bg-[#1A1715] border border-stone-850 rounded-lg p-6 sm:p-8 mb-6 sm:mb-8 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 fade-up"
             style="animation-delay: 0.2s"
           >
             <div>
@@ -220,18 +220,18 @@ async function placeOrder() {
               >
                 Estimated Pickup
               </p>
-              <p class="text-3xl font-light text-terracotta-400">35 min</p>
+              <p class="text-2xl sm:text-3xl font-light text-terracotta-400">35 min</p>
               <p class="text-xs text-sand-400 mt-1">
                 {{ new Date().toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) }}
               </p>
             </div>
-            <div class="border-l border-stone-850 pl-8">
+            <div class="sm:border-l border-stone-850 sm:pl-8 pt-6 sm:pt-0 border-t sm:border-t-0">
               <p
                 class="text-[0.65rem] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-2"
               >
                 Order Number
               </p>
-              <p class="text-3xl font-light text-sand-100 font-mono">
+              <p class="text-2xl sm:text-3xl font-light text-sand-100 font-mono">
                 {{ confirmation.code.split('-')[1]?.slice(0, 4).toUpperCase() || 'NM' }}
               </p>
               <p class="text-xs text-sand-400 mt-1">
@@ -245,7 +245,7 @@ async function placeOrder() {
             style="animation-delay: 0.4s"
           >
             <div
-              class="px-8 py-6 border-b border-stone-850/50 flex justify-between items-center"
+              class="px-6 sm:px-8 py-5 sm:py-6 border-b border-stone-850/50 flex justify-between items-center"
             >
               <h2
                 class="text-sm font-medium tracking-[0.15em] uppercase text-sand-100"
@@ -257,7 +257,7 @@ async function placeOrder() {
               </span>
             </div>
 
-            <div class="p-8 space-y-6">
+            <div class="p-6 sm:p-8 space-y-5 sm:space-y-6">
               <div
                 v-for="item in confirmation.items"
                 :key="item.id"
@@ -297,18 +297,18 @@ async function placeOrder() {
           </div>
 
           <div
-            class="mt-12 flex gap-4 fade-up"
+            class="mt-10 sm:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto fade-up"
             style="animation-delay: 0.6s"
           >
             <NuxtLink
               to="/"
-              class="px-8 py-3 border border-stone-800 text-sand-400 hover:text-sand-100 hover:border-stone-600 rounded text-xs font-medium tracking-[0.1em] uppercase transition-all"
+              class="px-6 sm:px-8 py-3 min-h-[48px] flex items-center justify-center border border-stone-800 text-sand-400 hover:text-sand-100 hover:border-stone-600 rounded text-xs font-medium tracking-[0.1em] uppercase transition-all"
             >
               Return Home
             </NuxtLink>
             <NuxtLink
               to="/orders"
-              class="px-8 py-3 bg-terracotta-500 hover:bg-terracotta-400 text-white rounded text-xs font-medium tracking-[0.1em] uppercase transition-all"
+              class="px-6 sm:px-8 py-3 min-h-[48px] flex items-center justify-center bg-terracotta-500 hover:bg-terracotta-400 text-white rounded text-xs font-medium tracking-[0.1em] uppercase transition-all"
             >
               Track Progress
             </NuxtLink>
@@ -323,7 +323,7 @@ async function placeOrder() {
       <!-- Empty -->
       <main
         v-else-if="cart.length === 0"
-        class="max-w-3xl mx-auto px-8 md:px-12 py-24 text-center"
+        class="max-w-3xl mx-auto px-6 sm:px-8 md:px-12 py-16 sm:py-24 text-center"
       >
         <div class="flex flex-col items-center gap-6">
           <div
@@ -345,7 +345,7 @@ async function placeOrder() {
               <path d="M16 10a4 4 0 0 1-8 0" />
             </svg>
           </div>
-          <h1 class="text-3xl font-light text-sand-100 tracking-tight">
+          <h1 class="text-2xl sm:text-3xl font-light text-sand-100 tracking-tight">
             Your basket is empty
           </h1>
           <p class="text-sand-400 font-light max-w-sm">
@@ -353,7 +353,7 @@ async function placeOrder() {
           </p>
           <NuxtLink
             to="/"
-            class="mt-2 bg-terracotta-500 hover:bg-terracotta-400 text-white px-8 py-3 rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors"
+            class="mt-2 bg-terracotta-500 hover:bg-terracotta-400 text-white px-8 py-3 min-h-[48px] inline-flex items-center justify-center rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors"
           >
             Browse Restaurants
           </NuxtLink>
@@ -363,20 +363,20 @@ async function placeOrder() {
       <!-- Checkout form -->
       <main
         v-else
-        class="max-w-3xl mx-auto px-8 md:px-12 py-12"
+        class="max-w-3xl mx-auto px-6 sm:px-8 md:px-12 py-8 sm:py-12"
       >
         <h1
-          class="text-4xl font-light text-sand-100 mb-2 tracking-tight"
+          class="text-3xl sm:text-4xl font-light text-sand-100 mb-2 tracking-tight"
         >
           Checkout
         </h1>
         <p
-          class="text-[0.65rem] uppercase tracking-[0.25em] text-stone-500 font-semibold mb-12"
+          class="text-[0.65rem] uppercase tracking-[0.25em] text-stone-500 font-semibold mb-10 sm:mb-12"
         >
           Ordering from {{ activeRestaurant }}
         </p>
 
-        <form class="space-y-16" @submit.prevent="placeOrder">
+        <form class="space-y-12 sm:space-y-16" @submit.prevent="placeOrder">
           <!-- Delivery -->
           <section>
             <div class="flex items-center gap-4 mb-8">
@@ -392,7 +392,7 @@ async function placeOrder() {
               </h2>
             </div>
 
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <div class="col-span-2 space-y-2">
                 <label
                   class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium"
@@ -497,7 +497,7 @@ async function placeOrder() {
                   </div>
                 </div>
               </div>
-              <div class="grid grid-cols-2 gap-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div class="space-y-2">
                   <label
                     class="text-[0.65rem] uppercase tracking-widest text-sand-400 font-medium"

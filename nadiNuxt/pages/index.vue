@@ -58,7 +58,7 @@ const chapters = [
   <div class="flex flex-col">
     <!-- Hero -->
     <section
-      class="relative h-[92vh] min-h-[640px] flex items-end pb-20 px-8 md:px-16 overflow-hidden"
+      class="relative min-h-[640px] h-[92vh] flex items-end pb-16 sm:pb-20 pt-24 sm:pt-28 px-6 sm:px-8 md:px-16 overflow-hidden"
     >
       <div class="absolute inset-0 w-full h-full z-0">
         <img
@@ -79,23 +79,23 @@ const chapters = [
           </span>
         </div>
         <h1
-          class="text-6xl md:text-7xl lg:text-8xl font-light text-sand-100 mb-8 tracking-tight leading-[0.95]"
+          class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light text-sand-100 mb-6 sm:mb-8 tracking-tight leading-[0.95]"
         >
           Taste the soul
           <br />
           of the Levant.
         </h1>
         <p
-          class="text-lg lg:text-xl text-sand-300 font-light leading-relaxed max-w-2xl mb-10"
+          class="text-base sm:text-lg lg:text-xl text-sand-300 font-light leading-relaxed max-w-2xl mb-8 sm:mb-10"
         >
           Eastern Mediterranean cuisine, served from kitchens rooted in the
           warmth of family, spice, and story. Order online for pickup or
           delivery across Seattle.
         </p>
-        <div class="flex flex-wrap items-center gap-4">
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4">
           <NuxtLink
             to="/menu/mamnoon"
-            class="bg-terracotta-500 hover:bg-terracotta-400 text-white px-8 py-4 rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors inline-flex items-center gap-3"
+            class="bg-terracotta-500 hover:bg-terracotta-400 text-white px-6 sm:px-8 py-4 min-h-[48px] rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors inline-flex items-center gap-3"
           >
             Start an Order
             <svg
@@ -115,7 +115,7 @@ const chapters = [
           </NuxtLink>
           <a
             href="#restaurants"
-            class="px-8 py-4 border border-stone-700 hover:border-sand-400 text-sand-200 hover:text-sand-100 rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors"
+            class="px-6 sm:px-8 py-4 min-h-[48px] border border-stone-700 hover:border-sand-400 text-sand-200 hover:text-sand-100 rounded text-xs font-medium tracking-[0.15em] uppercase transition-colors inline-flex items-center"
           >
             Explore Restaurants
           </a>
@@ -124,7 +124,7 @@ const chapters = [
 
       <!-- Sandbox chip -->
       <div
-        class="absolute bottom-8 right-8 md:right-16 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-stone-800 bg-stone-950/60 backdrop-blur-sm text-[0.65rem] tracking-[0.2em] uppercase text-stone-400"
+        class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 md:right-16 inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-stone-800 bg-stone-950/60 backdrop-blur-sm text-[0.6rem] sm:text-[0.65rem] tracking-[0.2em] uppercase text-stone-400"
       >
         <span class="w-1.5 h-1.5 bg-terracotta-400 rounded-full animate-pulse" />
         Sandbox Mode
@@ -134,10 +134,10 @@ const chapters = [
     <!-- Restaurants -->
     <section
       id="restaurants"
-      class="py-28 px-8 md:px-16 bg-stone-950"
+      class="py-16 sm:py-24 md:py-28 px-6 sm:px-8 md:px-16 bg-stone-950"
     >
       <div class="max-w-7xl mx-auto">
-        <div class="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-8 border-b border-stone-850">
+        <div class="mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-6 sm:pb-8 border-b border-stone-850">
           <div>
             <span
               class="text-[0.65rem] tracking-[0.25em] uppercase text-terracotta-400 font-medium"
@@ -145,7 +145,7 @@ const chapters = [
               The Table
             </span>
             <h2
-              class="text-4xl md:text-5xl font-light text-sand-100 tracking-tight mt-3"
+              class="text-3xl sm:text-4xl md:text-5xl font-light text-sand-100 tracking-tight mt-3"
             >
               Our Restaurants
             </h2>
@@ -166,22 +166,22 @@ const chapters = [
     </section>
 
     <!-- How it works -->
-    <section class="py-28 px-8 md:px-16 bg-[#0A0908] border-t border-stone-900">
+    <section class="py-16 sm:py-24 md:py-28 px-6 sm:px-8 md:px-16 bg-[#0A0908] border-t border-stone-900">
       <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-20">
+        <div class="text-center mb-14 sm:mb-20">
           <span
             class="text-[0.65rem] tracking-[0.25em] uppercase text-terracotta-400 font-medium"
           >
             The Journey
           </span>
           <h2
-            class="text-4xl md:text-5xl font-light text-sand-100 tracking-tight mt-3"
+            class="text-3xl sm:text-4xl md:text-5xl font-light text-sand-100 tracking-tight mt-3"
           >
             From our kitchen to yours
           </h2>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-12 md:gap-16">
+        <div class="grid md:grid-cols-3 gap-10 sm:gap-12 md:gap-16">
           <div
             v-for="chapter in chapters"
             :key="chapter.number"
@@ -210,10 +210,10 @@ const chapters = [
 
     <!-- Footer -->
     <footer
-      class="mt-auto py-16 px-8 md:px-16 border-t border-stone-900 bg-stone-950"
+      class="mt-auto py-12 sm:py-16 px-6 sm:px-8 md:px-16 border-t border-stone-900 bg-stone-950"
     >
       <div
-        class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 pb-12 border-b border-stone-900"
+        class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 sm:gap-12 pb-10 sm:pb-12 border-b border-stone-900"
       >
         <div>
           <div class="flex items-center gap-3 mb-4">

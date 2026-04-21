@@ -6,6 +6,7 @@ node_modules/
 # Nuxt build output
 .nuxt/
 .output/
+dist
 dist/
 
 # Logs
